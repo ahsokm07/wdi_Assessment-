@@ -1,0 +1,7 @@
+#start service tomcat after installation
+
+class tomcat::service { 
+ service {"tomcat";
+ ensure => running,
+ }
+}

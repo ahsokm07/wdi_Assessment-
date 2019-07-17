@@ -1,0 +1,13 @@
+###tomcat file managed by puppet
+TOMCAT_CFG_LOADED="1"
+
+TOMCAT_BASE="/var/lib/tomcats/"
+
+JAVA_HOME="/usr/lib/jvm/jr"
+
+CATALINA_HOME="/usr/share/tomcat"
+
+CATALINA_TMPDIR="/var/cache/tomcat/temp"
+
+
+SECURITY_MANAGER="false"

@@ -1,0 +1,8 @@
+#stage nodes
+node 'node1.devops.com' { 
+ include java::install
+ include tomcat:install
+ include tomcat:service
+
+}
+ 
