@@ -1,3 +1,7 @@
+The below code uses the Ruby version Manager (rvm) binaries from the agent/master to execute the puppet commands.  I have used a scripted pipeline mode below using single node executor once the code is verified and validated it will be pushed to deploy. 
+
+
+
 node {
 	checkout scm
 	echo "intitating pipeline"
