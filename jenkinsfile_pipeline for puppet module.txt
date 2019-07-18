@@ -1,0 +1,24 @@
+node {
+	checkout scm
+	echo "intitating pipeline"
+
+	stage 'testing sytax of the module"
+	sh ''#!/bin/bash
+	source ~/rvm/scripts/rvm
+	exec puppet parser validate manifests/tomcat/
+	...
+	
+	stage 'lint testing'
+	sh ' ' ' #!/bin/bash
+	source ~/rvm/scripts/rvm
+	exec puupet-lint manifests/*.pp
+	...
+	
+	 stage 'smoke testing'
+	sh ' ' ' #~/bin/bash
+	source ~/rvm/scripts/rvm
+	exec puppet apply test/init.pp --noop --modulepath=/module/tomcat/init.pp
+
+	stage 'deploy'
+  	echo 'deploy to puppet masters'
+}
