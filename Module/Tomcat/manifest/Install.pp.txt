@@ -1,4 +1,4 @@
-#install tomcat
+##install tomcat
 
 class tomcat::install {
  package {['tomcat','tomcat-webapps']:
